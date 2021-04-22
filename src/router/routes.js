@@ -4,14 +4,14 @@ function load (component) {
 }
 
 export default [
-  {
-    path: '/',
-    component: () => import('../pages/index.vue'),
-    meta: { title: '首页' }
-  },
   // {
   //   path: '/',
-  //   component: load('index'),
+  //   component: () => import('../pages/index.vue'),
   //   meta: { title: '首页' }
-  // }
+  // },
+  {
+    path: '/',
+    component: load('index'),
+    meta: { title: '首页' }
+  }
 ]
