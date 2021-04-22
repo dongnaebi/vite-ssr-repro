@@ -6,7 +6,12 @@ function load (component) {
 export default [
   {
     path: '/',
-    component: load('index'),
-    meta: { title: '首页', hideHeader: true }
+    component: () => import('../pages/index.vue'),
+    meta: { title: '首页' }
   },
+  // {
+  //   path: '/',
+  //   component: load('index'),
+  //   meta: { title: '首页' }
+  // }
 ]
